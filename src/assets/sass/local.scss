@@ -115,6 +115,8 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #services-1062 {
+            background-color: var(--dark);
+
             .cs-item {
                 background-color: var(--medium);
             }
@@ -325,6 +327,8 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #sbs-1099 {
+            background-color: var(--medium);
+
             .cs-title,
             .cs-text,
             .cs-h3,
@@ -663,7 +667,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #pricing-1183 {
-            background-color: rgba(0, 0, 0, 0.2);
+            background-color: var(--medium);
             .cs-title,
             .cs-text,
             .cs-package,
@@ -677,7 +681,7 @@
             }
 
             .cs-item {
-                background-color: var(--medium);
+                background-color: var(--dark);
             }
 
             .cs-icon {
@@ -1134,6 +1138,8 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #contact-1105 {
+            background-color: var(--medium);
+
             .cs-title,
             .cs-text,
             .cs-header,
@@ -1160,10 +1166,11 @@
                     color: #fff;
                     opacity: 0.5;
                 }
+                border: none;
             }
 
             .cs-ul {
-                background-color: var(--medium);
+                background-color: var(--dark);
                 &:before {
                     opacity: 0.3;
                 }
