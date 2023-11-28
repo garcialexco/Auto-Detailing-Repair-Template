@@ -501,6 +501,8 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #why-choose-892 {
+            background-color: var(--medium);
+
             &:before {
                 opacity: 0.2;
                 background-color: #000;
@@ -516,7 +518,7 @@
             }
 
             .cs-item {
-                background-color: var(--accent);
+                background-color: var(--dark);
             }
 
             .cs-h3,

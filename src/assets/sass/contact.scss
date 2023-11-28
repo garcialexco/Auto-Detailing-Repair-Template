@@ -542,6 +542,8 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #reviews-727 {
+            background-color: var(--medium);
+
             .cs-topper,
             .cs-title,
             .cs-text,
@@ -556,7 +558,7 @@
             }
 
             .cs-item {
-                background-color: var(--medium);
+                background-color: var(--dark);
             }
         }
     }
