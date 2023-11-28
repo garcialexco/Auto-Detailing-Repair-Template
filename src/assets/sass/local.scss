@@ -927,9 +927,8 @@
             padding: 0;
             padding-left: calc(24 / 16 * 1rem);
             color: var(--headerColor);
-            background-color: #fff;
+            background-color: #f1f1f1;
             border: none;
-            border: 1px solid #f1f1f1;
             /* prevents padding from adding to height and width */
             box-sizing: border-box;
             &::placeholder {
@@ -1152,7 +1151,7 @@
             }
 
             .cs-form {
-                background-color: var(--medium);
+                background-color: var(--dark);
             }
 
             .cs-label {
