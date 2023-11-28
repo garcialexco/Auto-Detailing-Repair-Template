@@ -51,8 +51,7 @@
             margin: 0;
             /* 24px - 32px */
             padding: clamp(1.5rem, 3vw, 2rem);
-            background-color: #fff;
-            box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
+            background-color: #f1f1f1;
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
             grid-column: span 12;
@@ -205,6 +204,45 @@
             max-width: calc(630 / 16 * 1rem);
             margin: 0;
             color: var(--bodyTextColor);
+        }
+
+        .cs-button-solid {
+            font-size: calc(16 / 16 * 1rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875em, 5.5vw, 3.5em);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 3.5em;
+            color: #fff;
+            min-width: calc(214 / 16 * 1rem);
+            padding: 0 calc(32 / 16 * 1rem);
+            background-color: var(--primary);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
         }
 
         .cs-image-group {
