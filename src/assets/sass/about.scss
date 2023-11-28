@@ -349,6 +349,7 @@
         overflow: hidden;
         position: relative;
         z-index: 1;
+        background-color: #f1f1f1;
 
         .cs-container {
             width: 100%;
@@ -389,7 +390,6 @@
             min-width: calc(150 / 16 * 1rem);
             padding: 0 calc(24 / 16 * 1rem);
             background-color: var(--primary);
-            border-radius: calc(4 / 16 * 1rem);
             display: inline-block;
             position: relative;
             z-index: 1;
@@ -406,7 +406,6 @@
                 top: 0;
                 left: 0;
                 z-index: -1;
-                border-radius: calc(4 / 16 * 1rem);
                 transition: width 0.3s;
             }
 
@@ -433,8 +432,7 @@
             list-style: none;
             /* 20px - 32px */
             padding: clamp(1.25rem, 2.3vw, 2rem);
-            background-color: #fef7f4;
-            border-radius: calc(16 / 16 * 1rem);
+            background-color: #fff;
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
             display: flex;

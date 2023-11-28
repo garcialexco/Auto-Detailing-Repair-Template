@@ -13,83 +13,123 @@ permalink: 'contact/'
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
+<div id="banner-712">
+    <div class="cs-container">
+        <span class="cs-int-title">Contact</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
 
-    <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
-
-    <section id="cs-contact">
-        <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
-                    </p>
-                </div>
-                <label>
+<section id="contact-1105">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Make An Appointment</h2>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-1105" name="Contact Form" method="post">
+                <label class="cs-label">
                     Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
+                    <input class="cs-input" required type="text" id="name-1105" name="name" placeholder="Name">
                 </label>
-                <label>
+                <label class="cs-label cs-email">
                     Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
+                    <input class="cs-input" required type="email" id="email-1105" name="email" placeholder="Email">
                 </label>
-                <label>
+                <label class="cs-label cs-phone">
                     Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
+                    <input class="cs-input" required type="phone" id="phone-1105" name="phone" placeholder="Phone">
                 </label>
-                <label>
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
-                </label>
-                <label class="cs-label-message">
+                <label class="cs-label">
                     Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-1105" placeholder="Write message..."></textarea>
                 </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
+                <button class="cs-button-solid cs-submit" type="submit">Make an Appointment</button>
             </form>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br />
-                    {{client.address.lineTwo}},
-                    <br />
-                    <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
-                    </span>
-                </a>
-
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
-                </picture>
-
-            </div>
         </div>
-    </section>
+        <ul class="cs-ul">
+            <li class="cs-li">
+                <picture class="cs-icon-wrapper">
+                    <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-phone.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
+                </picture>
+                <div class="cs-flex-group">
+                    <span class="cs-header">Phone</span>
+                    <a href="tel:888-4565-789
+                    " class="cs-link">+1 (888) 4565 789
+                    </a>
+                    <a href="tel:888-4565-789
+                    " class="cs-link">+1 (888) 4565 789
+                    </a>
+                </div>
+            </li>
+            <li class="cs-li">
+                <picture class="cs-icon-wrapper">
+                    <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-email.svg" alt="mail icon" class="cs-icon" width="40" height="40" decoding="async">
+                </picture>
+                <div class="cs-flex-group">
+                    <span class="cs-header">Email</span>
+                    <a href="mailto:info@stitchcarmechanics.com" class="cs-link">info@stitchcarmechanics.com</a>
+                    <a href="mailto:info@stitchcarmechanics.com" class="cs-link">info@stitchcarmechanics.com</a>
+                </div>
+            </li>
+            <li class="cs-li">
+                <picture class="cs-icon-wrapper">
+                    <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-pin.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                </picture>
+                <div class="cs-flex-group">
+                    <span class="cs-header">Address</span>
+                    <a href="" class="cs-link">2553 Woodbridge Lane, Boston Ware 120</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-727">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">Trusted by Thousand of People & Companies</h2>
+            <p class="cs-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">Loving the color!</h3>
+                <p class="cs-item-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
+                </p>
+                <span class="cs-name">Daniel</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">Affordable</h3>
+                <p class="cs-item-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
+                </p>
+                <span class="cs-name">Daniel</span>
+            </li>
+        </ul>
+    </div>
+</section>
+
 {% endblock %}
