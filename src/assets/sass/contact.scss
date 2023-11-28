@@ -134,7 +134,7 @@
             padding: clamp(1.5rem, 5.18vw, 3rem) clamp(1.25rem, 5.18vw, 2rem);
             /* prevents flexbox from affecting height and width */
             box-sizing: border-box;
-            background-color: #f7f8f8;
+            background-color: #f1f1f1;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -237,7 +237,7 @@
             /* 16px - 80px left and right */
             padding: clamp(2.5rem, 9.18vw, 6.25rem) clamp(1rem, 9.18vw, 5rem);
             box-sizing: border-box;
-            background-color: #f7f7f7;
+            background-color: #f1f1f1;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -275,7 +275,7 @@
 
             &:hover {
                 .cs-icon-wrapper {
-                    transform: scale(1.1);
+                    transform: scale(1.5);
                 }
             }
         }
@@ -309,8 +309,6 @@
             width: clamp(2.75rem, 8.3vw, 5rem);
             height: clamp(2.75rem, 8.3vw, 5rem);
             margin: 0;
-            border-radius: 50%;
-            border: 1px solid #bababa;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -420,6 +418,7 @@
 @media only screen and (min-width: 0rem) {
     #reviews-727 {
         padding: var(--sectionPadding);
+        background-color: #f1f1f1;
 
         .cs-container {
             width: 100%;
@@ -466,7 +465,7 @@
             padding: clamp(2rem, 7vw, 3rem) clamp(1rem, 4vw, 2rem);
             /* makes padding not affect height and width */
             box-sizing: border-box;
-            background-color: #f0f0f0;
+            background-color: #fff;
             display: flex;
             flex-direction: column;
             align-items: flex-start;

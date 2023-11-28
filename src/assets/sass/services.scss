@@ -196,31 +196,6 @@
             transition: transform 0.3s;
         }
 
-        .cs-info {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: calc(4 / 16 * 1rem);
-        }
-
-        .cs-header {
-            font-size: calc(14 / 16 * 1rem);
-            line-height: 1.5em;
-            margin: 0;
-            color: var(--bodyTextColor);
-            display: block;
-        }
-
-        .cs-link-content {
-            /* 20px - 25px */
-            font-size: clamp(1.25rem, 4vw, 1.5625rem);
-            line-height: 1.2em;
-            font-weight: 700;
-            margin: 0;
-            color: var(--headerColor);
-            display: block;
-        }
-
         .cs-image-group {
             /* scales the whole group based on the view width size and stop when that vales equals .745em, resets at desktop */
             font-size: min(1.959vw, 0.745em);
@@ -307,9 +282,7 @@
         #sbs-1073 {
             .cs-title,
             .cs-text,
-            .cs-li,
-            .cs-link-content,
-            .cs-header {
+            .cs-li {
                 color: var(--bodyTextColorWhite);
             }
 
@@ -334,6 +307,7 @@
 @media only screen and (min-width: 0rem) {
     #pricing-1183 {
         padding: var(--sectionPadding);
+        background-color: #F1F1F1;
 
         .cs-container {
             width: 100%;
@@ -416,7 +390,7 @@
             /* 24px - 40px top & Bottom */
             /* 16px - 32px left & right */
             padding: clamp(1.5rem, 3vw, 2.5rem) calc(24 / 16 * 1rem);
-            background-color: #f7f7f7;
+            background-color: #fff;
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
             display: flex;
@@ -618,7 +592,7 @@
             padding: clamp(2rem, 7vw, 3rem) clamp(1rem, 4vw, 2rem);
             /* makes padding not affect height and width */
             box-sizing: border-box;
-            background-color: #f0f0f0;
+            background-color: #f1f1f1;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
